@@ -25,7 +25,7 @@ if __name__ == '__main__':
     NUM_EPOCHS = 100    # 训练周期
     BATCH_SIZE = 16     # 每批次训练数量
     patch_size = 128    # 训练图像裁剪大小
-    train_dir = "C:/project/pro/Gan/dataset/rain_data_train_Heavy/"
+    train_dir = "C:/project/pro/Gan/dataset/rain_data_train_Heavy/"     # 训练数据集目录
     ######### DataLoaders ###########
     train_dataset = get_training_data(train_dir, {'patch_size':patch_size})
     train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=0, drop_last=False, pin_memory=True)
