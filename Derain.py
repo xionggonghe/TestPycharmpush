@@ -22,9 +22,9 @@ if __name__ == '__main__':
     # print(model)
 
     '''##############################################加载数据#########################################################################'''
-    NUM_EPOCHS = 100
-    BATCH_SIZE = 16
-    patch_size = 128
+    NUM_EPOCHS = 100    # 训练周期
+    BATCH_SIZE = 16     # 每批次训练数量
+    patch_size = 128    # 训练图像裁剪大小
     train_dir = "C:/project/pro/Gan/dataset/rain_data_train_Heavy/"
     ######### DataLoaders ###########
     train_dataset = get_training_data(train_dir, {'patch_size':patch_size})
